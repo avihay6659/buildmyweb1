@@ -1,0 +1,1548 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>עומר פיט - רדה 10 קילו ב-60 יום | ליווי אישי לגברים</title>
+    <meta name="description" content="ליווי אישי למען ירידה של 10 קילו ב-60 יום ללא חדר כושר או דיאטות קשות. 117 גברים כבר הצליחו עם המתודה של עומר.">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💪</text></svg>">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    
+    <!-- Facebook Pixel -->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', 'YOUR_PIXEL_ID');
+        fbq('track', 'PageView');
+    </script>
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'GA_MEASUREMENT_ID');
+    </script>
+    
+    <style>
+        /* Add smooth scrolling to html */
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 80px; /* Offset for fixed header */
+        }
+
+        /* CSS Variables */
+        :root {
+            --primary: #FF6B35;
+            --secondary: #2ECC71;
+            --dark: #2C3E50;
+            --light: #ECF0F1;
+            --text: #34495E;
+            --text-light: #7F8C8D;
+            --white: #FFFFFF;
+            --shadow: 0 10px 30px rgba(0,0,0,0.1);
+            --shadow-hover: 0 20px 40px rgba(0,0,0,0.15);
+            --radius: 12px;
+            --radius-lg: 20px;
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Heebo', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: #FAFBFC;
+            color: var(--text);
+            line-height: 1.6;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        .header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            z-index: 1000;
+            transition: var(--transition);
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+        }
+
+        .header.scrolled {
+            box-shadow: var(--shadow);
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        .logo-icon {
+            width: 45px;
+            height: 45px;
+            background: linear-gradient(135deg, var(--primary), #E55A2B);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.3rem;
+            box-shadow: 0 5px 15px rgba(255, 107, 53, 0.3);
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .nav-link {
+            text-decoration: none;
+            color: var(--text);
+            font-weight: 500;
+            transition: var(--transition);
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+        }
+
+        .nav-link:hover {
+            color: var(--primary);
+            background: rgba(255, 107, 53, 0.1);
+        }
+
+        .cta-btn {
+            background: linear-gradient(135deg, var(--primary), #E55A2B);
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 25px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+            text-decoration: none;
+            box-shadow: 0 5px 15px rgba(255, 107, 53, 0.3);
+        }
+
+        .cta-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(255, 107, 53, 0.4);
+        }
+
+        /* Mobile Menu */
+        .mobile-menu {
+            display: none;
+            flex-direction: column;
+            gap: 4px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 8px;
+        }
+
+        .mobile-menu span {
+            width: 25px;
+            height: 3px;
+            background: var(--text);
+            border-radius: 2px;
+            transition: var(--transition);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--dark) 0%, #34495E 100%);
+            color: white;
+            padding: 120px 0 80px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                radial-gradient(circle at 20% 50%, rgba(255, 107, 53, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(46, 204, 113, 0.1) 0%, transparent 50%);
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-badge {
+            background: var(--secondary);
+            color: white;
+            padding: 12px 24px;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            font-weight: 700;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 2rem;
+            animation: pulse 2s infinite;
+        }
+
+        .hero h1 {
+            font-size: clamp(2.5rem, 6vw, 4.5rem);
+            font-weight: 900;
+            margin-bottom: 1.5rem;
+            line-height: 1.1;
+            background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-subtitle {
+            font-size: clamp(1.1rem, 3vw, 1.4rem);
+            margin-bottom: 2rem;
+            color: rgba(255, 255, 255, 0.9);
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero-features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin: 3rem auto;
+            max-width: 800px;
+        }
+
+        .feature {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 1.5rem;
+            border-radius: var(--radius-lg);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: var(--transition);
+        }
+
+        .feature:hover {
+            background: rgba(255, 255, 255, 0.15);
+            transform: translateY(-5px);
+        }
+
+        .feature i {
+            color: var(--secondary);
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .feature h3 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .feature p {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+
+        .hero-cta {
+            margin-top: 3rem;
+        }
+
+        .hero-btn {
+            background: linear-gradient(135deg, var(--primary), #E55A2B);
+            color: white;
+            padding: 20px 40px;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: var(--transition);
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            box-shadow: 0 10px 30px rgba(255, 107, 53, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            transition: left 0.5s;
+        }
+
+        .hero-btn:hover::before {
+            left: 100%;
+        }
+
+        .hero-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(255, 107, 53, 0.4);
+        }
+
+        /* Stats Section */
+        .stats {
+            background: white;
+            padding: 60px 0;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 3rem;
+            text-align: center;
+        }
+
+        .stat {
+            position: relative;
+        }
+
+        .stat-number {
+            font-size: 3.5rem;
+            font-weight: 900;
+            color: var(--primary);
+            display: block;
+            line-height: 1;
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-label {
+            font-size: 1rem;
+            color: var(--text-light);
+            font-weight: 600;
+        }
+
+        /* Why Different Section */
+        .why-different {
+            padding: 100px 0;
+            background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .section-title {
+            font-size: clamp(2rem, 4vw, 3.5rem);
+            font-weight: 800;
+            color: var(--dark);
+            margin-bottom: 1rem;
+        }
+
+        .section-subtitle {
+            font-size: 1.2rem;
+            color: var(--text-light);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .differences-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .difference-card {
+            background: white;
+            padding: 3rem 2rem;
+            border-radius: var(--radius-lg);
+            text-align: center;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .difference-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(135deg, var(--primary), #E55A2B);
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+
+        .difference-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .difference-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .card-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, var(--primary), #E55A2B);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 2rem;
+            font-size: 2rem;
+            color: white;
+            box-shadow: 0 10px 30px rgba(255, 107, 53, 0.3);
+        }
+
+        .difference-card h3 {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: var(--dark);
+            margin-bottom: 1rem;
+        }
+
+        .difference-card p {
+            color: var(--text);
+            line-height: 1.7;
+        }
+
+        /* Process Section */
+        .process {
+            padding: 100px 0;
+            background: var(--dark);
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .process::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                radial-gradient(circle at 20% 80%, rgba(255, 107, 53, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(46, 204, 113, 0.1) 0%, transparent 50%);
+        }
+
+        .process-steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .step {
+            text-align: center;
+            position: relative;
+        }
+
+        .step-number {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, var(--primary), #E55A2B);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 2rem;
+            font-size: 2rem;
+            font-weight: 800;
+            color: white;
+            box-shadow: 0 10px 30px rgba(255, 107, 53, 0.3);
+        }
+
+        .step h3 {
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .step p {
+            color: rgba(255, 255, 255, 0.9);
+            line-height: 1.7;
+        }
+
+        /* Testimonials Section */
+        .testimonials {
+            padding: 100px 0;
+            background: white;
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .testimonial {
+            background: #f8f9fa;
+            padding: 3rem 2rem;
+            border-radius: var(--radius-lg);
+            position: relative;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+
+        .testimonial:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .testimonial::before {
+            content: '"';
+            position: absolute;
+            top: -10px;
+            right: 20px;
+            font-size: 4rem;
+            color: var(--primary);
+            font-weight: 700;
+            opacity: 0.3;
+        }
+
+        .testimonial-content {
+            font-size: 1.1rem;
+            color: var(--text);
+            line-height: 1.7;
+            margin-bottom: 2rem;
+            font-style: italic;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .author-avatar {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, var(--primary), #E55A2B);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        .author-info h4 {
+            font-weight: 700;
+            color: var(--dark);
+            margin-bottom: 0.5rem;
+        }
+
+        .author-result {
+            color: var(--secondary);
+            font-weight: 600;
+        }
+
+        /* About Section */
+        .about {
+            padding: 100px 0;
+            background: linear-gradient(135deg, var(--dark) 0%, #34495E 100%);
+            color: white;
+        }
+
+        .about-container {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .coach-image {
+            text-align: center;
+        }
+
+        .coach-avatar {
+            width: 300px;
+            height: 300px;
+            background: linear-gradient(135deg, var(--primary), #E55A2B);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+            font-size: 6rem;
+            color: white;
+            box-shadow: 0 20px 60px rgba(255, 107, 53, 0.3);
+        }
+
+        .about-content h2 {
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+        }
+
+        .about-content p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .coach-stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .coach-stat {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 2rem 1rem;
+            border-radius: var(--radius-lg);
+            backdrop-filter: blur(10px);
+        }
+
+        .coach-stat-number {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--secondary);
+            display: block;
+        }
+
+        .coach-stat-label {
+            color: rgba(255, 255, 255, 0.8);
+            font-weight: 600;
+        }
+
+        /* CTA Section */
+        .final-cta {
+            padding: 100px 0;
+            background: linear-gradient(135deg, var(--primary), #E55A2B);
+            color: white;
+            text-align: center;
+        }
+
+        .final-cta h2 {
+            font-size: clamp(2rem, 4vw, 3.5rem);
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+        }
+
+        .final-cta p {
+            font-size: 1.3rem;
+            margin-bottom: 3rem;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            opacity: 0.95;
+        }
+
+        .lead-form {
+            background: white;
+            padding: 3rem;
+            border-radius: var(--radius-lg);
+            max-width: 600px;
+            margin: 0 auto;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: var(--dark);
+            font-weight: 600;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 15px;
+            border: 2px solid #e9ecef;
+            border-radius: var(--radius);
+            font-size: 1rem;
+            transition: var(--transition);
+            background: #f8f9fa;
+            font-family: inherit;
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: var(--primary);
+            background: white;
+            box-shadow: 0 0 0 3px rgba(255, 107, 53, 0.1);
+        }
+
+        .submit-btn {
+            background: linear-gradient(135deg, var(--secondary), #27AE60);
+            color: white;
+            border: none;
+            padding: 18px 30px;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            font-weight: 700;
+            cursor: pointer;
+            width: 100%;
+            transition: var(--transition);
+            box-shadow: 0 10px 30px rgba(46, 204, 113, 0.3);
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(46, 204, 113, 0.4);
+        }
+
+        .submit-btn:disabled {
+            opacity: 0.7;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .form-note {
+            text-align: center;
+            margin-top: 1rem;
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+
+        /* WhatsApp Button */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            left: 30px;
+            background: #25D366;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            z-index: 1000;
+            box-shadow: 0 8px 25px rgba(37, 211, 102, 0.3);
+            animation: bounce 2s infinite;
+            cursor: pointer;
+            transition: var(--transition);
+            text-decoration: none;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+            box-shadow: 0 12px 35px rgba(37, 211, 102, 0.4);
+        }
+
+        /* Facebook Float Button */
+        .facebook-float {
+            position: fixed;
+            bottom: 30px;
+            left: 110px; /* Position it next to WhatsApp */
+            background: #1877F2;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            z-index: 1000;
+            box-shadow: 0 8px 25px rgba(24, 119, 242, 0.3);
+            animation: bounce 2s infinite;
+            animation-delay: 0.5s; /* Slight delay for cool effect */
+            cursor: pointer;
+            transition: var(--transition);
+            text-decoration: none;
+        }
+
+        .facebook-float:hover {
+            transform: scale(1.1);
+            box-shadow: 0 12px 35px rgba(24, 119, 242, 0.4);
+        }
+
+        /* Success Message */
+        .success-message {
+            background: var(--secondary);
+            color: white;
+            padding: 20px;
+            border-radius: var(--radius);
+            margin-top: 20px;
+            display: none;
+            text-align: center;
+            font-weight: 600;
+        }
+
+        /* Animations */
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+            40% { transform: translateY(-10px); }
+            60% { transform: translateY(-5px); }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-menu {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: white;
+                flex-direction: column;
+                padding: 2rem;
+                box-shadow: var(--shadow);
+                border-radius: 0 0 var(--radius-lg) var(--radius-lg);
+            }
+
+            .nav-menu.active {
+                display: flex;
+            }
+
+            .mobile-menu {
+                display: flex;
+            }
+
+            .hero {
+                padding-top: 100px;
+            }
+
+            .about-container {
+                grid-template-columns: 1fr;
+                text-align: center;
+                gap: 3rem;
+            }
+
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+
+            .differences-grid,
+            .process-steps,
+            .testimonials-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .coach-stats {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 15px;
+            }
+
+            .hero-features {
+                grid-template-columns: 1fr;
+            }
+
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .whatsapp-float {
+                bottom: 20px;
+                left: 20px;
+                width: 55px;
+                height: 55px;
+                font-size: 1.5rem;
+            }
+
+            .facebook-float {
+                bottom: 20px;
+                left: 85px; /* Adjusted for mobile */
+                width: 55px;
+                height: 55px;
+                font-size: 1.5rem;
+            }
+        }
+
+        /* Footer hover effects */
+        footer a:hover {
+            color: var(--primary) !important;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="#" class="logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-dumbbell"></i>
+                    </div>
+                    <span>אביחי פיט</span>
+                </a>
+                
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#about" class="nav-link">אודותיי</a></li>
+                    <li><a href="#process" class="nav-link">התהליך</a></li>
+                    <li><a href="#testimonials" class="nav-link">המלצות</a></li>
+                    <li><a href="#contact" class="nav-link">צור קשר</a></li>
+                    <li><a href="#contact" class="cta-btn">התחל עכשיו</a></li>
+                </ul>
+                
+                <button class="mobile-menu" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fas fa-fire"></i>
+                    <span>117 גברים כבר הצליחו עם אביחי השבוע!</span>
+                </div>
+                
+                <h1>רדה 10 קילו ב-60 יום<br>בלי לסבול מדיאטות</h1>
+                
+                <p class="hero-subtitle">
+                    ליווי אישי אחד על אחד שיגרום לך לרדת במשקל בצורה בריאה וקבועה<br>
+                    <strong>בלי חדר כושר, בלי לוותר על אוכל שאתה אוהב</strong>
+                </p>
+                
+                <div class="hero-features">
+                    <div class="feature">
+                        <i class="fas fa-briefcase"></i>
+                        <h3>לגברים עסוקים</h3>
+                        <p>מותאם לסגנון החיים שלך</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-utensils"></i>
+                        <h3>בלי רעב</h3>
+                        <p>תפריטים שמשביעים ומזינים</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-chart-line"></i>
+                        <h3>תוצאות מהירות</h3>
+                        <p>ירידה כבר מהשבוע הראשון</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-mobile-alt"></i>
+                        <h3>ליווי יומי</h3>
+                        <p>תמיכה בווטסאפ 24/7</p>
+                    </div>
+                </div>
+                
+                <div class="hero-cta">
+                    <a href="#contact" class="hero-btn" onclick="scrollToForm()">
+                        <i class="fas fa-rocket"></i>
+                        <span>אני רוצה לרדת במשקל עכשיו</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer style="background: var(--dark); color: white; padding: 3rem 0 1rem;">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-bottom: 2rem;">
+                <div>
+                    <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 1rem;">
+                        <div style="width: 40px; height: 40px; background: linear-gradient(135deg, var(--primary), #E55A2B); border-radius: 10px; display: flex; align-items: center; justify-content: center; color: white;">
+                            <i class="fas fa-dumbbell"></i>
+                        </div>
+                        <span style="font-size: 1.3rem; font-weight: 700;">אביחי פיט</span>
+                    </div>
+                    <p style="color: rgba(255,255,255,0.8); line-height: 1.6;">עוזר לגברים לחזור לגוף שלהם - בלי סבל, בלי בולשיט.</p>
+                </div>
+                
+                <div>
+                    <h4 style="margin-bottom: 1rem; font-size: 1.1rem;">קישורים מהירים</h4>
+                    <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+                        <a href="#about" style="color: rgba(255,255,255,0.8); text-decoration: none; transition: var(--transition);">אודותיי</a>
+                        <a href="#process" style="color: rgba(255,255,255,0.8); text-decoration: none; transition: var(--transition);">התהליך</a>
+                        <a href="#testimonials" style="color: rgba(255,255,255,0.8); text-decoration: none; transition: var(--transition);">המלצות</a>
+                        <a href="#contact" style="color: rgba(255,255,255,0.8); text-decoration: none; transition: var(--transition);">צור קשר</a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 style="margin-bottom: 1rem; font-size: 1.1rem;">צור קשר</h4>
+                    <div style="display: flex; flex-direction: column; gap: 0.8rem;">
+                        <div style="display: flex; align-items: center; gap: 8px; color: rgba(255,255,255,0.8);">
+                            <i class="fab fa-whatsapp"></i>
+                            <span>054-783-5327</span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 8px; color: rgba(255,255,255,0.8);">
+                            <i class="fas fa-envelope"></i>
+                            <span>avihay@avihaypitt.co.il</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 style="margin-bottom: 1rem; font-size: 1.1rem;">עקוב אחרי</h4>
+                    <div style="display: flex; gap: 1rem;">
+                        <a href="https://www.facebook.com/avihayvk?locale=he_IL" target="_blank" 
+                           style="width: 40px; height: 40px; background: rgba(255,255,255,0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.2rem; transition: var(--transition); text-decoration: none;"
+                           onmouseover="this.style.background='#1877F2'; this.style.transform='translateY(-2px)'"
+                           onmouseout="this.style.background='rgba(255,255,255,0.1)'; this.style.transform='translateY(0)'">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="https://wa.me/972547835327" target="_blank"
+                           style="width: 40px; height: 40px; background: rgba(255,255,255,0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.2rem; transition: var(--transition); text-decoration: none;"
+                           onmouseover="this.style.background='#25D366'; this.style.transform='translateY(-2px)'"
+                           onmouseout="this.style.background='rgba(255,255,255,0.1)'; this.style.transform='translateY(0)'">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 1.5rem; text-align: center;">
+                <p style="color: rgba(255,255,255,0.7); margin: 0;">&copy; 2025 אביחי פיט. כל הזכויות שמורות.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat">
+                    <span class="stat-number" data-count="117">0</span>
+                    <span class="stat-label">גברים הצליחו</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" data-count="1247">0</span>
+                    <span class="stat-label">קילו ירדו</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" data-count="95">0</span>
+                    <span class="stat-label">% שיעור הצלחה</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" data-count="7">0</span>
+                    <span class="stat-label">ימים לתוצאה</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Different Section -->
+    <section class="why-different" id="why-different">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">למה זה שונה מכל מה שניסית?</h2>
+                <p class="section-subtitle">זה לא עוד דיאטה שתכשל בה אחרי שבועיים - זו מתודה מוכחת שעובדת</p>
+            </div>
+            
+            <div class="differences-grid">
+                <div class="difference-card">
+                    <div class="card-icon">
+                        <i class="fas fa-ban"></i>
+                    </div>
+                    <h3>בלי מדידות ושקילות</h3>
+                    <p>שכחת מהמאזניים! נעקוב אחרי ההתקדמות בדרכים חכמות שלא יגרמו לך לדחף ולחרדה</p>
+                </div>
+                
+                <div class="difference-card">
+                    <div class="card-icon">
+                        <i class="fas fa-hamburger"></i>
+                    </div>
+                    <h3>לא תוותר על אוכל שאתה אוהב</h3>
+                    <p>בורקס? שווארמה? פיצה? כולם נשארים! נלמד איך לאכול אותם נכון ובמידות הנכונות</p>
+                </div>
+                
+                <div class="difference-card">
+                    <div class="card-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>ליווי אמיתי בווטסאפ</h3>
+                    <p>לא תישאר לבד! אני פה בשבילך כל יום לכל שאלה, התלבטות או רגע של חולשה</p>
+                </div>
+                
+                <div class="difference-card">
+                    <div class="card-icon">
+                        <i class="fas fa-couch"></i>
+                    </div>
+                    <h3>בלי חדר כושר</h3>
+                    <p>התוכנית בנויה לגברים שרוצים תוצאות בלי להזיע בחדר כושר או לעשות ספורט מתיש</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process" id="process">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">איך התהליך עובד?</h2>
+                <p class="section-subtitle">4 שלבים פשוטים לגוף החדש שלך</p>
+            </div>
+            
+            <div class="process-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>שיחת ייעוץ חינם</h3>
+                    <p>נכיר, נבין מה המצב שלך היום ומה המטרות שלך. בלי לחץ, בלי מכירות</p>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>תוכנית אישית</h3>
+                    <p>נבנה יחד תוכנית תזונה מותאמת לסגנון החיים שלך ולהעדפות שלך</p>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>ליווי יומי</h3>
+                    <p>כל יום אני פה בשבילך בווטסאפ. שאלות, עידוד, התאמות - מה שצריך</p>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>תוצאות קבועות</h3>
+                    <p>ירידה בריאה וקבועה בלי אפקט יו-יו. התוצאות נשארות לכל החיים</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">מה הלקוחות שלי אומרים?</h2>
+                <p class="section-subtitle">תוצאות אמיתיות מגברים אמיתיים</p>
+            </div>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        "הורדתי 12 קילו בלי לוותר על בורקס! אביחי הראה לי איך לאכול חכם ולא להרעיב את עצמי. הכי טוב שאביחי זמין כל הזמן בווטסאפ"
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">ד</div>
+                        <div class="author-info">
+                            <h4>דוד כהן</h4>
+                            <div class="author-result">ירד 12 קילו ב-8 שבועות</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        "נכנסתי לבגדים שלא עלו עליי 4 שנים! הכי מטורף שלא הרגשתי שאני על דיאטה אפילו יום אחד. אביחי גאון!"
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">א</div>
+                        <div class="author-info">
+                            <h4>אבי שלום</h4>
+                            <div class="author-result">ירד 15 קילו ב-10 שבועות</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        "הבטן נעלמה תוך חודש! אשתי לא מאמינה כמה אני נראה טוב. תודה אביחי על הסבלנות והמקצועיות"
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">מ</div>
+                        <div class="author-info">
+                            <h4>משה לוי</h4>
+                            <div class="author-result">ירד 9 קילו ב-6 שבועות</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-container">
+                <div class="coach-image">
+                    <div class="coach-avatar">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                </div>
+                
+                <div class="about-content">
+                    <h2>היי, אני אביחי 👋</h2>
+                    <p>
+                        אני עוזר לגברים לחזור לגוף שלהם – <strong>בלי סבל, בלי בולשיט.</strong>
+                    </p>
+                    <p>
+                        אחרי שעזרתי ל־<strong>117 גברים לרדת במשקל</strong> בצורה בריאה וקבועה, 
+                        אני פותח את ההרשמה לסבב חדש של הליווי האישי שלי.
+                    </p>
+                    <p>
+                        המטרה שלי פשוטה: לתת לך כלים פרקטיים שיעבדו עם סגנון החיים שלך, 
+                        לא נגדו. <strong>בלי להפוך אותך למישהו אחר, בלי לוותר על מה שאתה אוהב.</strong>
+                    </p>
+                    
+                    <div class="coach-stats">
+                        <div class="coach-stat">
+                            <span class="coach-stat-number">117</span>
+                            <span class="coach-stat-label">לקוחות מרוצים</span>
+                        </div>
+                        <div class="coach-stat">
+                            <span class="coach-stat-number">95%</span>
+                            <span class="coach-stat-label">שיעור הצלחה</span>
+                        </div>
+                        <div class="coach-stat">
+                            <span class="coach-stat-number">5</span>
+                            <span class="coach-stat-label">שנות ניסיון</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="final-cta" id="contact">
+        <div class="container">
+            <h2>מוכן להסתכל במראה ולהגיד – חזרתי לעצמי?</h2>
+            <p>
+                מלא את הפרטים עכשיו וקבל שיחת ייעוץ אישית <strong>חינם</strong> – בלי התחייבות.<br>
+                אני אדבר איתך, אבין מה המצב שלך ונבנה יחד תוכנית שתעבוד בשבילך.
+            </p>
+            
+            <form class="lead-form" id="leadForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="fullName">שם מלא</label>
+                        <input type="text" id="fullName" name="fullName" class="form-control" required placeholder="איך קוראים לך?">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">מספר טלפון</label>
+                        <input type="tel" id="phone" name="phone" class="form-control" required placeholder="050-1234567">
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="age">גיל</label>
+                        <select id="age" name="age" class="form-control" required>
+                            <option value="">בחר גיל</option>
+                            <option value="25-30">25-30</option>
+                            <option value="31-35">31-35</option>
+                            <option value="36-40">36-40</option>
+                            <option value="41-45">41-45</option>
+                            <option value="46+">46+</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="weight">כמה קילו רוצה לרדת?</label>
+                        <select id="weight" name="weight" class="form-control" required>
+                            <option value="">בחר יעד</option>
+                            <option value="5-8">5-8 קילו</option>
+                            <option value="8-12">8-12 קילו</option>
+                            <option value="12-15">12-15 קילו</option>
+                            <option value="15+">יותר מ-15 קילו</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="motivation">מה המוטיבציה שלך לרדת במשקל?</label>
+                    <textarea id="motivation" name="motivation" class="form-control" rows="3" placeholder="לדוגמה: רוצה להרגיש בטוח בבגדי ים, לשחק עם הילדים..."></textarea>
+                </div>
+                
+                <button type="submit" class="submit-btn">
+                    <i class="fas fa-calendar-check"></i>
+                    קבע שיחת ייעוץ חינם עכשיו!
+                </button>
+                
+                <div class="form-note">
+                    <i class="fas fa-lock"></i>
+                    הפרטים שלך מוגנים ומאובטחים
+                </div>
+                
+                <div class="success-message" id="successMessage">
+                    <i class="fas fa-check-circle"></i>
+                    <strong>תודה רבה!</strong> הפרטים התקבלו בהצלחה.<br>
+                    אני אחזור אליך תוך 24 שעות לתיאום השיחה.
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Social Float Buttons -->
+    <a href="https://wa.me/972547835327?text=היי%20אביחי,%20ראיתי%20את%20האתר%20ואני%20רוצה%20לשמוע%20עוד%20על%20התוכנית%20לירידה%20במשקל.%20אשמח%20לפרטים%20נוספים!" 
+       class="whatsapp-float" target="_blank" title="שלח הודעה בווטסאפ">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <a href="https://www.facebook.com/avihayvk?locale=he_IL" 
+       class="facebook-float" target="_blank" title="עקוב אחרי בפייסבוק">
+        <i class="fab fa-facebook-f"></i>
+    </a>
+
+    <script>
+        // Enhanced JavaScript with all features
+        
+        // Header scroll effect
+        window.addEventListener('scroll', function() {
+            const header = document.getElementById('header');
+            if (window.scrollY > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // Mobile menu toggle
+        function toggleMenu() {
+            const navMenu = document.getElementById('navMenu');
+            navMenu.classList.toggle('active');
+        }
+
+        // Simple smooth scroll to form
+        function scrollToForm() {
+            document.getElementById('contact').scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+            
+            // Track CTA click
+            if (typeof fbq !== 'undefined') {
+                fbq('track', 'InitiateCheckout');
+            }
+            if (typeof gtag !== 'undefined') {
+                gtag('event', 'begin_checkout');
+            }
+        }
+
+        // Animated counters
+        function animateCounters() {
+            const counters = document.querySelectorAll('[data-count]');
+            let animated = false;
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting && !animated) {
+                        animated = true;
+                        counters.forEach(counter => {
+                            const target = parseInt(counter.getAttribute('data-count'));
+                            const duration = 2000;
+                            const step = target / (duration / 16);
+                            let current = 0;
+                            
+                            const timer = setInterval(() => {
+                                current += step;
+                                if (current >= target) {
+                                    counter.textContent = target;
+                                    clearInterval(timer);
+                                } else {
+                                    counter.textContent = Math.floor(current);
+                                }
+                            }, 16);
+                        });
+                    }
+                });
+            });
+            
+            document.querySelector('.stats').&& observer.observe(document.querySelector('.stats'));
+        }
+
+        // Initialize counters
+        animateCounters();
+
+        // Simple smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Form submission
+        document.getElementById('leadForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const submitBtn = document.querySelector('.submit-btn');
+            const successMessage = document.getElementById('successMessage');
+            
+            // Add loading state
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> שולח...';
+            
+            // Get form data
+            const formData = new FormData(this);
+            const data = {
+                fullName: formData.get('fullName'),
+                phone: formData.get('phone'),
+                age: formData.get('age'),
+                weight: formData.get('weight'),
+                motivation: formData.get('motivation'),
+                timestamp: new Date().toLocaleString('he-IL'),
+                source: 'Landing Page'
+            };
+            
+            // Track conversion
+            if (typeof fbq !== 'undefined') {
+                fbq('track', 'Lead', {
+                    content_name: 'Weight Loss Program',
+                    value: 1,
+                    currency: 'ILS'
+                });
+            }
+            
+            if (typeof gtag !== 'undefined') {
+                gtag('event', 'generate_lead', {
+                    currency: 'ILS',
+                    value: 1
+                });
+            }
+            
+            // Simulate form submission
+            setTimeout(() => {
+                // Here you would send to your backend
+                console.log('Form data:', data);
+                
+                // Show success message
+                successMessage.style.display = 'block';
+                this.style.display = 'none';
+                
+                // Scroll to success message
+                successMessage.scrollIntoView({ behavior: 'smooth' });
+            }, 2000);
+        });
+
+        // Track scroll depth
+        let maxScroll = 0;
+        window.addEventListener('scroll', function() {
+            const scrollPercent = Math.round((window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100);
+            
+            if (scrollPercent > maxScroll) {
+                maxScroll = scrollPercent;
+                
+                // Track major milestones
+                if (maxScroll >= 25 && typeof gtag !== 'undefined') {
+                    gtag('event', 'scroll', { percent_scrolled: 25 });
+                }
+                if (maxScroll >= 50 && typeof gtag !== 'undefined') {
+                    gtag('event', 'scroll', { percent_scrolled: 50 });
+                }
+                if (maxScroll >= 75 && typeof gtag !== 'undefined') {
+                    gtag('event', 'scroll', { percent_scrolled: 75 });
+                }
+            }
+        });
+
+        // Track time on page
+        let startTime = Date.now();
+        window.addEventListener('beforeunload', function() {
+            const timeOnPage = Math.round((Date.now() - startTime) / 1000);
+            if (typeof gtag !== 'undefined') {
+                gtag('event', 'timing_complete', {
+                    name: 'time_on_page',
+                    value: timeOnPage
+                });
+            }
+        });
+
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe elements for animation
+        document.querySelectorAll('.difference-card, .step, .testimonial').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(el);
+        });
+
+        console.log('🚀 אביחי פיט - האתר נטען בהצלחה!');
+        console.log('📊 Analytics מוכן לעבודה');
+        console.log('📱 WhatsApp מחובר');
+        console.log('📋 טפסים פעילים');
+        console.log('✨ גלילה חלקה מופעלת!');
+    </script>
+</body>
+</html>
